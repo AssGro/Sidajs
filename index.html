@@ -12,23 +12,6 @@
 
 <body> 
 
-<!--wrapper börjar--> 
-<div class="div-content">
-    <img class="MySlides" src="img/image1.jpg" style="width:100%" alt="A bird, covered in all colours of the rainbow.">
-    <img class="MySlides" src="img/image2.jpg" style="width:100%" alt="A bush of ferns, with light shining down from the canapies.">
-    <img class="MySlides" src="img/image3.jpg" style="width:100%" alt="A man looking out of a hole in the enourmous log he resides in.">
-    <img class="MySlides" src="img/image4.jpg" style="width:100%" alt="A sunset on a tropical beach, with surroundinghills and forrests.">
-    <img class="MySlides" src="img/image5.jpg" style="width:100%" alt="A large wooden house, concealed by the birch trees surrounding it.">
-    <button class="slider-button display-left"
-    onclick="changeImage(-1)"> &#129076;</button>
-    <button class="slider-button display-right"
-    onclick="changeImage(1)"> &#129078;</button>
-    </div>
-    <script src="js/domjs.js"></script>
-    <div class="wrapper"> 
-
-    <header class="header"> 
-
         <h1>Min första hemsida</h1> 
 
     </header> 
@@ -36,14 +19,13 @@
     <header class="mainmenu"> 
 
         <ul> 
-
-            <li><a href="home.html">Hem</a></li> 
-
-            <li><a href="news.html">Nyheter</a></li> 
-
-            <li><a href="contacts.html">kontakt</a></li> 
-
-            <li><a href="about.html">Om</a></li> 
+          <div class="sidenav"> <!--jag försökte lägga till en sidomeny med sektioner, men kunde inte pga för lite tid och coden förstörde sidan när jag försökte.--> 
+            <a href="#Home">About</a>
+            <a href="#News">Services</a>
+            <a href="#Navigation">Clients</a>
+            <a href="#contacts">Contact</a>
+          </div>
+          
 
         </ul> 
 
@@ -51,7 +33,7 @@
 
     <div class="wrapper_2col"> 
 
-    <div class="leftcol"> 
+    <div class="main"> 
 
       <p> 
 
@@ -91,7 +73,7 @@
 
     </div><!--leftcol slutar--> 
 
-    <div class="rightcol"> 
+    <div class="main"> 
 
       <p> 
 
@@ -111,8 +93,6 @@
 
       </p> 
 
-      <p><img src="img/andreas.jpg" height="300" width="201" alt="Foto" /> 
-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed a augue id 
 
         leo scelerisque hendrerit non non dui. Integer condimentum quam sed tellus 
@@ -128,7 +108,36 @@
         Sed eget tellus dui, eget sodales lectus. 
 
       </p> 
+      <div class="div-content"> 
+        <img class="MySlides" 
+        src="img/image1.jpg" 
+        style="width:100%" 
+        alt="A bird, covered in all colours of the rainbow.">
+        <img class="MySlides" 
+        src="img/image2.jpg" 
+        style="width:100%" 
+        alt="A bush of ferns, with light shining down from the canapies.">
+        <img class="MySlides" 
+        src="img/image3.jpg" 
+        style="width:100%" 
+        alt="A man looking out of a hole in the enourmous log he resides in.">
+        <img class="MySlides" 
+        src="img/image4.jpg" 
+        style="width:100%" 
+        alt="A sunset on a tropical beach, with surroundinghills and forrests.">
+        <img class="MySlides" 
+        src="img/image5.jpg" 
+        style="width:100%" 
+        alt="A large wooden house, concealed by the birch trees surrounding it.">
+        <button class="slider-button display-left"
+        onclick="changeImage(-1)"> &#129076;</button>
+        <button class="slider-button display-right"
+        onclick="changeImage(1)"> &#129078;</button>
+    </div>
+    <script src="js/domjs.js"></script>
+    <div class="wrapper"> 
 
+    <header class="header"> 
       <div class="push"></div> 
 
     </div><!--rightcol slutar--> 
